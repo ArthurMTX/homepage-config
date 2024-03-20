@@ -1,0 +1,20 @@
+---
+version: "3.3"
+services:
+  homepage:
+    image: ghcr.io/gethomepage/homepage:latest
+    container_name: homepage
+    labels:
+      - traefik.enable=true
+      - traefik.http.routers.homepage.rule=Host(`$(YOUR_DOMAIN)`)
+      - traefik.http.routers.homepage.entrypoints=websecure
+      - traefik.http.routers.homepage.tls.certresolver=lets-encrypt
+    volumes:
+      - ./config:/app/config
+      - /var/run/docker.sock:/var/run/docker.sock
+      - /mnt/storage:/mnt/storage
+    networks:
+      - web
+networks:
+  web:
+    external: true
