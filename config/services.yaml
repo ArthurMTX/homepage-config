@@ -1,0 +1,78 @@
+---
+# For configuration options and examples, please see:
+# https://gethomepage.dev/latest/configs/services
+
+- Security/Monitoring:
+    - Traefik:
+        href: <URL>
+        icon: traefik
+        container: traefik
+        widget:
+          type: traefik
+          url: <URL>
+          username: <USERNAME>
+          password: <PASSWORD>
+
+    - Portainer:
+        href: <URL>
+        icon: portainer
+        container: <CONTAINER>
+        widget:
+          type: portainer
+          url: <URL>
+          env: 1
+          key: <KEY>
+
+    - Uptime Kuma:
+        href: <URL>
+        icon: uptime-kuma
+        container: <CONTAINER>
+        widget:
+          type: uptimekuma
+          url: <URL>
+          slug: <SLUG>
+
+    - Speedtest:
+        href: <URL>
+        icon: speedtest-tracker
+        container: <CONTAINER>
+        widget:
+          type: speedtest
+          url: <URL>
+
+    - Crowdsec:
+        href: <URL>
+        icon: crowdsec
+        container: <CONTAINER>
+
+- Medias:
+    - Calendar:
+        widget:
+          type: calendar
+          firstDayInWeek: monday
+          view: monthly
+          maxEvents: 10
+          showTime: true
+          timezone: Europe/Paris
+          integrations:
+             - type: ical
+               url: <URL>
+               name: <NAME>
+               color: zinc
+               showName: true
+
+             - type: ical
+               url: <URL>
+               name: <NAME>
+               color: violet
+               showName: true
+
+    - Cryptocurrencies:
+        icon: bitcoin
+        href: <URL>
+        widget:
+          type: coinmarketcap
+          currency: USD
+          symbols: [BTC, SOL, ETH, XRP]
+          key: <API>
+          defaultinterval: 7d
