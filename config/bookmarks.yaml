@@ -15,6 +15,10 @@
         - abbr: OC
           href: <URL>
           icon: oracle
+    - Hostinger:
+        - abbr: HO
+          href: <URL>
+          icon: https://iconape.com/wp-content/png_logo_vector/hostinger.png
     - Hetzner:
         - abbr: HE
           href: <URL>
