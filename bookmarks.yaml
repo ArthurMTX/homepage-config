@@ -1,0 +1,36 @@
+---
+# For configuration options and examples, please see:
+# https://gethomepage.dev/latest/configs/bookmarks
+
+- Developer:
+    - GitHub:
+        - abbr: GH
+          href: <URL>
+          icon: github
+    - OVH:
+        - abbr: OV
+          href: <URL>
+          icon: ovh
+    - OCI:
+        - abbr: OC
+          href: <URL>
+          icon: oracle
+    - Hetzner:
+        - abbr: HE
+          href: <URL>
+          icon: hetzner
+    - Crowdsec:
+        - abbr: CR
+          href: <URL>
+          icon: crowdsec
+
+- Social:
+    - Proton Mail:
+        - abbr: PR
+          href: <URL>
+          icon: proton-mail
+
+- Entertainment:
+    - YouTube:
+        - abbr: YT
+          href: <URL>
