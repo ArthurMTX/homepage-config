@@ -1,0 +1,31 @@
+title: <TITLE>
+startUrl: <URL>
+base: <URL>
+favicon: <FAVICON>
+target: _blank
+hideVersion: true
+showStats: true
+
+headerStyle: boxed
+background:
+ image: https://images.unsplash.com/photo-1597773150796-e5c14ebecbf5?q=80&w=1770&auto=format&fit=crop
+ opacity: 25
+theme: dark
+color: slate
+
+quicklaunch:
+  searchDescriptions: true
+  hideInternetSearch: true
+  showSearchSuggestions: true
+  hideVisitURL: true
+
+layout:
+  Media:
+    style: row
+    columns: 4
+  Downloaders:
+    style: row
+    columns: 3
+  Utilities:
+    style: row
+    columns: 2
